@@ -1,5 +1,4 @@
 package com.sip.ams.controllers;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,9 +25,7 @@ public class ProviderController {
     @Autowired
     public ProviderController(ProviderRepository providerRepository) {
         this.providerRepository = providerRepository;
-    }
-
-    
+    } 
     @GetMapping("list")
     //@ResponseBody
     public String listProviders(Model model) {
